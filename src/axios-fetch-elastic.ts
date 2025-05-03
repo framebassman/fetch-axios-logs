@@ -1,9 +1,6 @@
 import winston from 'winston';
 
-// import { CustomHttpElasticTransport } from './custom-http-elastic-transport';
-// import { Agent } from 'http';
 import { AxiosTransport } from 'winston-fetch-axios';
-import axios from 'axios';
 
 let dateString = new Date(new Date()).toISOString().split('T')[0];
 dateString = dateString.replace('-', '.');
